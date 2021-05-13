@@ -47,8 +47,7 @@ class LLStack
   end
   
   def top
-    value = @list.head.value
-    value
+    @list.head.value
   end
   
   def is_empty?
