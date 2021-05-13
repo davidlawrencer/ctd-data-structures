@@ -2,7 +2,7 @@
 
 Welcome!
 
-## How to use this repository
+## What is This Repository?
 
 In this repo, you will find sample code and implementation reference for common data structures. You will also find practice questions that will help build familiarity with these data structures. Finally, you will find learning materials like slideshows and code filled with notation. 
 
