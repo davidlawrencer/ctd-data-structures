@@ -28,7 +28,7 @@ Linked lists have a few advantages over arrays:
 #### Stretch
 
 1. Add a function `middle`, which finds the middle value of a linked list. Try to do this in one traversal of the list using the [fast and slow pointer/tortoise and hair](https://emre.me/coding-patterns/fast-slow-pointers/) approach.
-2. Add a function `hasCycle`, which determines whether or not there is a cycle in the list (and returns a Bool). A cycle occurs when the `next` value of a Node points back to a previous `Node`, which prevents traversal from beginning to end of the list. Ex:
+2. Add a function `hasCycle`, which determines whether or not there is a cycle in the list (and returns a Bool). A cycle occurs when the `next` value of a Node points back to a Node that was before it in the list, which prevents traversal from beginning to end of the list. Ex:
 ![image](https://user-images.githubusercontent.com/50370157/118125564-296ef980-b3c5-11eb-8f02-55d7cce28b31.png)
 
 3. Thus far we've worked with a particularly basic kind of Linked List called a "Singly-Linked List". Another kind is a "Doubly-Linked List" (DLL). 
