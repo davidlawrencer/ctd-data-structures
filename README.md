@@ -6,7 +6,7 @@ Welcome!
 
 In this repo, you will find sample code and implementation reference for common data structures. You will also find practice questions that will help build familiarity with these data structures. Finally, you will find learning materials like slideshows and code filled with notation. 
 
-Have any questions? Open an Issue!
+Have any questions? Please get in touch, or open an Issue!
 
 ## Data Structure Implementations and Practice
 
