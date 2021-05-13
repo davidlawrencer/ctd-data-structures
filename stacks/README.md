@@ -7,35 +7,18 @@
 
 ## What are they?
 
-Linked Lists are lists of ordered elements, very similar to what you might see in an array. The chief difference from an array is that a Linked List's elements (called "Nodes") must know about the item after them to maintain order after an add or delete action. In contrast, arrays will have to adjust the size of the entire data structure in order to maintain order after an add or delete action.
+Stacks are abstract data types that allow you to interact with only one item at a time. The order that items are added is also the order in which they'll be removed; thus, we say that stacks are Last-In, First-Out (LIFO) data structures. Stacks are an easy way to organize our data using a data structure whose basic operations are all O(1).
 
 ## Why use them?
 
-Linked lists have a few advantages over arrays:
+Stacks can be incredibly helpful for figuring out order and nesting. 
 
-- Adding to the beginning of the list takes O(1).
-- Items can be added or removed from the middle of the list without re-allocating memory for the list (VERY important for lower-level programming).
-- There is no need to define an initial size.
+- If we're debugging our applications and we want to find out all of the operations that occurred before an issue presented, we can check the "Call Stack" to see what order our functions were called in. The most recent function be at the top of the stack, and then we could dig down from there to see the functions that were called before it.
+- If we want to parse a raw string to see if it has valid punctuation (every quote should close, every paren should have a closing paren), we could track the opening punctuation marks and make sure the corresponding closing mark comes next.
 
 ## Practice
 
-#### Basic
+1. Create a function `reverseString`, which takes in a string and then uses a stack to reverse the order of the characters in the input.
+2. Create a function `validPunctuation` which takes in a string and uses a stack to see if every `"`, `(`, `{`, and `[` mark has a closing mark. Use a stack here because order matters! Ex: `"([])"` is valid, but `"([)]"` is not, even though both strings contain the same 6 characters.
+3. Sort an input stack using other stacks. HINT: Use three stacks, as if you are implementing the [Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi) problem.
 
-1. Add a function `removeElement(:value)`, which will delete any nodes that have that input value.
-2. Add a function `removeDuplicates`, which will remove any duplicate values from the list.
-3. Add a function `sort`, which will sort the list by its values from low to high (you can assume the linked list only has numbers).
-
-#### Stretch
-
-1. Add a function `middle`, which finds the middle value of a linked list. Try to do this in one traversal of the list using the [fast and slow pointer/tortoise and hair](https://emre.me/coding-patterns/fast-slow-pointers/) approach.
-2. Add a function `hasCycle`, which determines whether or not there is a cycle in the list (and returns a Bool). A cycle occurs when the `next` value of a Node points back to a Node that was before it in the list, which prevents traversal from beginning to end of the list. Ex:
-![image](https://user-images.githubusercontent.com/50370157/118125564-296ef980-b3c5-11eb-8f02-55d7cce28b31.png)
-
-3. Thus far we've worked with a particularly basic kind of Linked List called a "Singly-Linked List". Another kind is a "Doubly-Linked List" (DLL). 
-
-Each Node in a DLL has a `next` pointer AND another pointer called `previous`, which points to the Node before it in the list (the Head node's `previous` is null). The DLL will keep track of the beginning (`HEAD`) node, and it will also track the end (`TAIL`) node.
-
-Implement a new Node class for the DLL, and the DLL itself. After you've created it, make sure to add functions allowing you to:
-- Add a value to the beginning of the list.
-- Add a value to the end of the list.
-- Look up the first and last values in the list.
