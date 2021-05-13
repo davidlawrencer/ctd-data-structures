@@ -10,9 +10,6 @@ class Node
     @value = value
     @next  = nil
   end
-  def to_s
-    "Node with value: #{@value}"
-  end
 end
 
 # Linked List class: knows where the HEAD node is, and uses that position to add, remove, and look through values in the chain of nodes.
