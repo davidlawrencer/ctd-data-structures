@@ -18,9 +18,10 @@ Have any questions? Open an Issue!
 #### Arrays and Linked List
 
 - [Slideshow](https://docs.google.com/presentation/d/1wgQ9O8ys5c9Uyn90wkKMKuWeOyIXCpywBJ8GIHlGTrE/edit?usp=sharing)
-- [Live-Code]()
+- [Live-Code](./linked-lists/live-code.md)
 
 #### Stacks
 
 - [Slideshow](https://docs.google.com/presentation/d/1P03Auya0vuSCbH8BimoCUzRaPi7daJsS9NkQ_ql2U8k/edit?usp=sharing)
-- [Live-Code]()
+- [Live-Code](./stacks/live-code.md)
+
