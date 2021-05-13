@@ -10,8 +10,8 @@ Have any questions? Please get in touch, or open an Issue!
 
 ## Data Structure Implementations and Practice
 
-- [Linked Lists](./linked-lists/)
-- [Stacks](./stacks/)
+- [Linked Lists](./linked-lists/README.md)
+- [Stacks](./stacks/README.md)
 
 ## Learning Materials
 
