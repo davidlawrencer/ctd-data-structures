@@ -25,7 +25,7 @@ class LinkedList
   
 # some sample LL functions. You could make tons of them!
   
-  def append(value)
+  def addToFront(value)
     node = Node.new(value)
     if @head
       node.next = @head
