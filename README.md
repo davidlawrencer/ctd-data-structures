@@ -25,3 +25,7 @@ Have any questions? Please get in touch, or open an Issue!
 - [Slideshow](https://docs.google.com/presentation/d/1P03Auya0vuSCbH8BimoCUzRaPi7daJsS9NkQ_ql2U8k/edit?usp=sharing)
 - [Live-Code](./stacks/live-code.md)
 
+#### Queues
+
+- [Slideshow](https://docs.google.com/presentation/d/17guT8A_HGJmia1afoZ1Hvn9s6fVl1Pn1Z_CXKeYY8sY/edit?usp=sharing)
+- [Live-Code](./queues/live-code.md)
