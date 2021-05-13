@@ -10,13 +10,17 @@ Have any questions? Open an Issue!
 
 ## Data Structure Implementations and Practice
 
-[Linked Lists](./linked-lists)
-[Stacks](./stacks)
+- [Linked Lists](./linked-lists)
+- [Stacks](./stacks)
 
 ## Learning Materials
 
-[Arrays and Linked List Slideshow](https://docs.google.com/presentation/d/1wgQ9O8ys5c9Uyn90wkKMKuWeOyIXCpywBJ8GIHlGTrE/edit?usp=sharing)
-[Arrays and Linked List Live-Code]()
+#### Arrays and Linked List
 
-[Stacks Slideshow](https://docs.google.com/presentation/d/1P03Auya0vuSCbH8BimoCUzRaPi7daJsS9NkQ_ql2U8k/edit?usp=sharing)
-[Stacks Live-Code]()
+- [Slideshow](https://docs.google.com/presentation/d/1wgQ9O8ys5c9Uyn90wkKMKuWeOyIXCpywBJ8GIHlGTrE/edit?usp=sharing)
+- [Live-Code]()
+
+#### Stacks
+
+- [Slideshow](https://docs.google.com/presentation/d/1P03Auya0vuSCbH8BimoCUzRaPi7daJsS9NkQ_ql2U8k/edit?usp=sharing)
+- [Live-Code]()
