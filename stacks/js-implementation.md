@@ -1,6 +1,8 @@
 ```js
 
-// Stack using array as underlying data collector - we'll manipulate the element at the last index, since it supports O(1) operations
+// Stack using array as underlying data collector 
+// we'll manipulate the element at the last index, since it supports O(1) operations
+
 class ArrayStack {
   constructor() {
     this.list = []
@@ -23,7 +25,9 @@ class ArrayStack {
   }
 }
 
-// Stack using LinkedList as underlying data collector - we'll manipulate HEAD, since it supports O(1) operations
+// Stack using LinkedList as underlying data collector 
+// we'll manipulate HEAD, since it supports O(1) operations
+
 class LLStack {
   constructor() {
     this.list = new LinkedList()
