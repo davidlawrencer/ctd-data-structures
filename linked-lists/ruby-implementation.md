@@ -29,10 +29,8 @@ class LinkedList
     node = Node.new(value)
     if @head
       node.next = @head
-      @head = node
-    else
-      @head = node
     end
+    @head = node
   end
   
   def printAllValues
