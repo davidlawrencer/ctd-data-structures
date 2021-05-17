@@ -1,47 +1,88 @@
 ```js
 
-// Node class: holds our data, and has a reference to the next node. That's it!
+class ArrayQueue {
 
-class Node {
-  constructor(value, next = null) {
-    this.value = value // Any type
-    this.next = next // Another Node
+  constructor() {
+    this.list = [];
+  }
+
+  enqueue(value) {
+    this.list.push(value)
+  }
+
+  dequeue() {
+    return this.list.shift()
+  }
+
+  get front() {
+    return this.list[0];
+  }
+
+  get isEmpty() {
+    return this.list.length === 0;
+  }
+
+}
+
+class LLQueue {
+  constructor() {
+    this.list = new LinkedList()
+  }
+
+  enqueue(value) {
+    if (this.list.tail === null) {
+      this.list.tail = node
+      this.list.head = node
+    } else {
+      let tail = this.list.tail
+      tail.next = node
+      this.list.tail = node
+    }
+  }
+
+  dequeue() {
+    if (this.list.head === null) {
+      return;
+    } 
+    
+    if (this.list.head === this.list.tail) {
+      let value = this.list.head.value
+      this.list.head = null
+      this.list.tail = null
+      return value
+    }
+
+    let head = this.list.head
+    this.list.head = head.next
+    return head.value    
+  }
+
+  get front() {
+    if (this.list.head === null) {
+      return
+    }
+    return this.list.head.value
+  }
+
+  get isEmpty() {
+    return this.list.head === null
   }
 }
 
-// Linked List class: knows where the HEAD node is, and uses that position to add, remove, and look through values in the chain of nodes.
-// When a user interfaces with the Linked List class, they should not have to know about Nodes. They are looking for the values that these nodes contain!
+// Helper classes
+
+class Node {
+  constructor(value, next) {
+    this.value = value
+    this.next = next
+  }
+}
 
 class LinkedList {
-  
-  // constructor just needs to know where head is. That's it!
-  constructor(head = null) {
-    this.head = head;
+  constructor() {
+    this.head = null
+    this.tail = null
   }
-  
-  // some sample LL functions. You could make tons of them!
-  
-  addToFront(value) {
-    let node = new Node(value)
-    node.next = this.head
-    this.head = node
-  }
-  
-  printAllValues() {
-    if (this.head === null) {
-      return;
-    }
-
-    let currentHead = this.head
-    while (currentHead !== null) {
-      console.log(currentHead.value)
-    }
-  }
-  
-  get isEmpty() {
-    return this.head === null;
-  }
-  
 }
 
 
