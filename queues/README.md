@@ -1,4 +1,4 @@
-# Linked Lists
+# Queues
 
 
 ## Implementations
@@ -8,35 +8,24 @@
 
 ## What are they?
 
-Linked Lists are lists of ordered elements, very similar to what you might see in an array. The chief difference from an array is that a Linked List's elements (called "Nodes") must know about the item after them to maintain order after an add or delete action. In contrast, arrays will have to adjust the size of the entire data structure in order to maintain order after an add or delete action.
+Queues are collections of elements that are kept in order. Similarly to stacks and linked lists, this data structure is linear, meaning that its elements form a sequeunce. The order is maintained by adding to one end ("enqueuing" from the back) and removing from the other end ("dequeuing" from the front). This data structure is classified as Last In, First Out (LIFO).
 
 ## Why use them?
 
-Linked lists have a few advantages over arrays:
-
-- Adding to the beginning of the list takes O(1).
-- Items can be added or removed from the middle of the list without re-allocating memory for the list (VERY important for lower-level programming).
-- There is no need to define an initial size.
+The abstract data structure Queue is used for the same reason banks have people line up in order. When there are multiple tasks to be completed, or data to be processed, they cannot all be completed at the same time. By enqueuing tasks at the back, we can ensure that we are completing the oldest items first. A standard queue will thus sort its items from oldest to newest, but it can also be expanded to serve tasks by additional criteria like priority.
 
 ## Practice
 
 #### Basic
 
-1. Add a function `removeElement(:value)`, which will delete any nodes that have that input value.
-2. Add a function `removeDuplicates`, which will remove any duplicate values from the list.
-3. Add a function `sort`, which will sort the list by its values from low to high (you can assume the linked list only has numbers).
+1. Add a function `sumAll`, which will return the sum of all values in a queue of numbers.
+2. Add a function `reverse`, which will reverse the items in your queue. It might be helpful to use a stack to do this (think about how a sequence of items would be added to a stack).
+3. Add a function `find(:index)`, which will return the value at a specific place in the sequence. Assume that your queue is 0-indexed.
 
 #### Stretch
 
-1. Add a function `middle`, which finds the middle value of a linked list. Try to do this in one traversal of the list using the [fast and slow pointer/tortoise and hair](https://emre.me/coding-patterns/fast-slow-pointers/) approach.
-2. Add a function `hasCycle`, which determines whether or not there is a cycle in the list (and returns a Bool). A cycle occurs when the `next` value of a Node points back to a Node that was before it in the list, which prevents traversal from beginning to end of the list. Ex:
-![image](https://user-images.githubusercontent.com/50370157/118125564-296ef980-b3c5-11eb-8f02-55d7cce28b31.png)
+1. Implement a queue using two stacks. Note that you will have to make a performance tradeoff; will your `enqueue` or your `dequeue` run in linear time?
 
-3. Thus far we've worked with a particularly basic kind of Linked List called a "Singly-Linked List". Another kind is a "Doubly-Linked List" (DLL). 
+2. Implement a [Priority Queue](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/), which attaches a "priority" to each element when `enqueue`ing, and makes sure to `dequeue` the element with the highest priority.
 
-Each Node in a DLL has a `next` pointer AND another pointer called `previous`, which points to the Node before it in the list (the Head node's `previous` is null). The DLL will keep track of the beginning (`HEAD`) node, and it will also track the end (`TAIL`) node.
-
-Implement a new Node class for the DLL, and the DLL itself. After you've created it, make sure to add functions allowing you to:
-- Add a value to the beginning of the list.
-- Add a value to the end of the list.
-- Look up the first and last values in the list.
+3. Use a queue to solve the [change-making](https://www.geeksforgeeks.org/check-if-x-can-give-change-to-every-person-in-the-queue/) problem.
