@@ -8,69 +8,36 @@ class ArrayQueue
     @list = []
   end
   
-  enqueue(value) {
-    this.list.push(value)
-  }
+  def enqueue(value) 
+  end
 
-  dequeue() {
-    return this.list.shift()
-  }
+  def dequeue
+  end
 
-  get front() {
-    return this.list[0];
-  }
+  def front
+  end 
+  
+  def isEmpty
+  end
+end
 
-  get isEmpty() {
-    return this.list.length === 0;
-  }
+class LLQueue 
 
-}
+  def initialize
+  end
+  
+  def enqueue(value) 
+  end
 
-class LLQueue {
-  constructor() {
-    this.list = new LinkedList()
-  }
+  def dequeue
+  end
 
-  enqueue(value) {
-    if (this.list.tail === null) {
-      this.list.tail = node
-      this.list.head = node
-    } else {
-      let tail = this.list.tail
-      tail.next = node
-      this.list.tail = node
-    }
-  }
-
-  dequeue() {
-    if (this.list.head === null) {
-      return;
-    } 
-    
-    if (this.list.head === this.list.tail) {
-      let value = this.list.head.value
-      this.list.head = null
-      this.list.tail = null
-      return value
-    }
-
-    let head = this.list.head
-    this.list.head = head.next
-    return head.value    
-  }
-
-  get front() {
-    if (this.list.head === null) {
-      return
-    }
-    return this.list.head.value
-  }
-
-  get isEmpty() {
-    return this.list.head === null
-  }
-}
-
+  def front
+  end 
+  
+  def isEmpty
+  end
+end
 
 # Helper classes
 
