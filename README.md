@@ -12,6 +12,7 @@ Have any questions? Please get in touch, or open an Issue!
 
 - [Linked Lists](./linked-lists/README.md)
 - [Stacks](./stacks/README.md)
+- [Queues](./queues/README.md)
 
 ## Learning Materials
 
